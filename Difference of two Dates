@@ -1,0 +1,36 @@
+A=input()
+B=input()
+a=A.split("/")
+b=B.split("/")
+a=[int(i) for i in a]
+b=[int(i) for i in b]
+x=(a[-1])
+X=(b[-1])
+y=(a[0])
+Y=(b[0])
+z=(a[1])
+Z=(b[1])
+if(X-x)>0:
+    year=X-x
+else:
+    year=0
+if(Z-z)>0:
+    months=Z-z
+if(Y-y)>0:
+    days=(Y-y)+1
+if(year>0):
+    print(year,end="")
+    print("Y",end=" ")
+if(months>0):
+    print(months,end="")
+    print("M",end=" ")
+if(days>0):
+    print(days,end="")
+    print("D")
+
+
+INPUT:
+01/01/2018
+03/03/2019
+OUTPUT:
+1Y 2M 3D
